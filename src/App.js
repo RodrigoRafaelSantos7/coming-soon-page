@@ -33,7 +33,9 @@ const App = () => {
         />
         <form action="https://api.web3forms.com/submit" method="POST">
           <input type="hidden" name="access_key" value="b25df7ee-27e9-4420-8041-c33d1f2d0875"/>
-          <input type="email" className="email" required /> {/* Button */}
+          <input type="hidden" name="email" value="New submission!"/>
+          <input type="email" className="email" required />
+          <input type="hidden" name="redirect" value="https://rodrigorafaelsantos7.github.io/coming-soon-page/"/>
           <div class="h-captcha" data-captcha="true"></div>
           <button className="btn" type="submit">
             Notify Me
